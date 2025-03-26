@@ -1,6 +1,6 @@
 requests
 apscheduler
-python-dotenv=
+python-dotenv
 python-telegram-bot
 yt-dlp
 moviepy
