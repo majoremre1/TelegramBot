@@ -95,7 +95,7 @@ async def handle_message(update: Update, context):
 
 # Hauptfunktion zum Starten des Bots
 def main():
-    bot_token = "8184390438:AAE93Z0N7sP2B6Vg3NJrUIDl2NXC9q8EB88"
+    bot_token = "8184390438:AAFrIbh8yfZTarEVXA_hNbgkOcX8nLPuyfc"
     application = Application.builder().token(bot_token).build()
 
     # Befehle registrieren
@@ -107,5 +107,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 
