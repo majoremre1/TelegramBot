@@ -95,7 +95,7 @@ async def handle_message(update: Update, context):
 
 # Hauptfunktion zum Starten des Bots
 def main():
-    bot_token = "8184390438:AAE93Z0N7sP2B6Vg3NJrUIDl2NXC9q8EB88"  # Dein Bot-Token als String
+    bot_token = "8184390438:AAE93Z0N7sP2B6Vg3NJrUIDl2NXC9q8EB88"
     application = Application.builder().token(bot_token).build()
 
     # Befehle registrieren
@@ -106,10 +106,9 @@ def main():
     application.run_webhook(
         listen="0.0.0.0",  # IP-Adresse des Servers
         port=8443,  # Port für Webhooks
-        url_path=bot_token,  # Dies sollte der Bot-Token sein
-        webhook_url=f"https://telegrambot-s9wx.onrender.com/{bot_token}"  # Korrekte Webhook-URL mit Token als String
+        url_path="webhook",  # Pfad für den Webhook, kann nach Belieben festgelegt werden
+        webhook_url=f"https://telegrambot-s9wx.onrender.com/webhook"  # Deine Webhook-URL
     )
 
 if __name__ == "__main__":
     main()
-
