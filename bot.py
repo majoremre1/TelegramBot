@@ -102,13 +102,10 @@ def main():
     application.add_handler(CommandHandler("start", start))
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
 
-    # Webhook anstelle von Polling verwenden
-    application.run_webhook(
-        listen="0.0.0.0",  # IP-Adresse des Servers
-        port=8443,  # Port für Webhooks
-        url_path="webhook",  # Pfad für den Webhook, kann nach Belieben festgelegt werden
-        webhook_url=f"https://telegrambot-s9wx.onrender.com/webhook"  # Deine Webhook-URL
-    )
+    # Bot starten
+    application.run_polling()
 
 if __name__ == "__main__":
     main()
+
+
