@@ -1,5 +1,4 @@
-requests
-apscheduler
-python-telegram-bot
 yt-dlp
+python-telegram-bot
 moviepy
+numpy
