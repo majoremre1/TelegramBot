@@ -1,5 +1,7 @@
-python-telegram-bot==20.0
-yt-dlp==2023.3.2
-moviepy==1.0.3
-numpy==1.24.2
-ffmpeg-python==0.2.0
+pip freeze > requirements.txt
+requests
+apscheduler
+python-dotenv=
+python-telegram-bot
+yt-dlp
+moviepy
