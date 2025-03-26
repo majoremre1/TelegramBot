@@ -1,5 +1,7 @@
 pip freeze > requirements.txt
-python-telegram-bot==20.0
 requests==2.26.0
 apscheduler==3.8.1
 python-dotenv==0.19.2
+python-telegram-bot==20.0
+yt-dlp
+moviepy
